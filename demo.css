@@ -1,0 +1,8 @@
+p{
+    font-size:x-large;
+    font-weight: bold;
+    color: red;
+    border: 1px solid lightgoldenrodyellow;
+    border-radius: 5%;
+    /* background-image: url("seashell.jpeg"); */
+}

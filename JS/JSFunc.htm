@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Math func
+        // var radius = 5
+        // var area_of_circle = Math.PI*radius*radius
+        // document.write("Area of circle with radius before rounding "+radius+"= ",area_of_circle)
+        // document.write("<BR/>")
+        // console.log(Math.PI,"*",radius,"*",radius)
+        // document.write("Area of circle with radius after rounding "+radius+"= ",Math.round(area_of_circle))
+        // document.write("<BR/>")
+        // document.write("Area of circle with radius after flooring "+radius+"= ",Math.floor(area_of_circle))
+        // document.write("<BR/>")
+        // document.write("Area of circle with radius after ceiling "+radius+"= ",Math.ceil(area_of_circle))
+        // document.write("<BR/>")
+        // document.write("Area of circle with radius after truncating "+radius+"= ",Math.trunc(area_of_circle))
+        // document.write("<BR/>")
+        // var num = 4
+        // document.write("Square root of "+num+"= ",Math.sqrt(num))
+        // document.write("<BR/>")
+        // document.write("4 to the power of "+num+"= ",Math.pow(num,4))
+        // document.write("<BR/>")
+        // document.write("Max of the 10,14,15 "+Math.max(10,14,15))
+        // document.write("<BR/>")
+        // document.write("Min of the 10,14,15 "+Math.min(10,14,15))
+        // document.write("<BR/>")
+        // document.write("Absolute value of -243 is ",Math.abs(-243))
+        // document.write("<BR/>")
+        // document.write("Random number between 0 to 1000 ",Math.random())
+        // document.write("<BR/>")
+        // document.write("Random number between 0 to 1000 ",Math.floor(Math.random()*100))
+        // document.write("<BR/>")
+
+        // String Func
+        // var str = "Hello World!"
+        // var message = "Good Morning"
+        // document.write("Length = ",str.length)
+        // document.write("<hr/>")
+        // document.write("character at position 4 = ",str.charAt(4))
+        // document.write("<hr/>")
+        // document.write("Asii code of character at position 4 = ",str.charCodeAt(1))
+        // document.write("<hr/>")
+        // document.write(message.concat(" ",str,"****"))
+        // document.write("<hr/>")
+        // document.write(str.substr(-4))
+        // document.write("<hr/>")
+
+        
+        // console.log(str)
+        // console.log(str.length)
+        // console.log(str.charAt(4))
+        // console.log(str.charCodeAt(4))
+        // console.log(str.concat(" ",str," good morning"))
+        // console.log(str.endsWith("d!"))
+        // console.log(str.startsWith("h"))
+        // console.log(str.indexOf("o"))
+        // console.log(str.indexOf("o",5))
+        // console.log(str.lastIndexOf("o"))
+        // console.log(str.substr(-5,3));
+        // console.log(str.match("ll"));
+        // console.log(str.match("LL"));
+        // str = str.replace("Hello","hi")
+        // console.log(str.length,str.trim().length)
+        // console.log(str.toUpperCase())
+        // console.log(str.search("^H"))
+        // console.log(str.search("\o"))
+        // console.log(str)    
+
+        
+        // var dt = new Date("2023-10-01")
+        // var dt1 = new Date()
+        // document.write(dt)
+        // document.write("<hr/>")
+        // document.write(dt1)
+        // document.write("<hr/>")
+        // document.write(dt1.getDate()+10)
+        // document.write("<hr/>")
+        // document.write(dt1.getDate()-10)
+
+        // Arrays
+        // var mon = new Array(4)
+
+        // mon[0] = "January"
+        // mon[1] = "Feb"
+        // mon[2] = "Mar"
+        // mon[3] = "April"
+        // document.write(mon.length)
+        
+
+        var month1 = ["Jan","feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"]
+        
+       
+        var day1  = ["Sun","Mon","Tue","Web","Thr","Fri","Sat"]
+        document.write("<hr/>")
+        document.write(month1.length)
+        document.write("<hr/>")
+        var dt = new Date()
+        document.write(dt.getMonth())
+        document.write("<hr/>")
+        document.write(dt.getDay())
+        document.write("<hr/>")
+        document.write(dt)
+        document.write("<hr/>")
+        document.write(dt.getDate()+"|"+month1[dt.getMonth()]+"|"+day1[dt.getDay()])
+
+    </script>
+</body>
+</html>

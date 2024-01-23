@@ -1,0 +1,57 @@
+.grid-container {
+    display: grid;
+    text-align: center;
+    color: white;
+    grid-template-columns: 1fr 3fr; /* Two columns, second is three times larger */
+    grid-template-rows: 1fr 1fr 3fr 1fr; /* Four rows, third is five times larger */
+    gap: 15px; /* Gap is 15px */
+    width:60%;
+    margin-top: 100px;
+    margin-left: 225px;
+
+  }
+  
+  .header {
+    border:1px solid black;
+    border-radius: 3%;
+    grid-column: 1 / 3; /* Spans both columns */
+    grid-row: 1 / 2; /* First row */
+    background-color: green;
+    height:100px;
+  }
+  
+  .sidebar {
+    border:1px solid black;
+    border-radius: 3%;
+    grid-column: 1 / 2; /* Spans the first column */
+    grid-row: 2 / 4; /* Second row */
+    background-color:turquoise;
+  }
+  
+  .nav {
+    border:1px solid black;
+    border-radius: 3%;
+    grid-column: 2 / 3; /* Spans the second column */
+    grid-row: 2 / 3; /* Second row */
+    background-color:rgb(51, 15, 211);
+  }
+  
+  .article {
+    border:1px solid black;
+    border-radius: 3%;
+    grid-column: 2 / 3; /* Spans the second column */
+    grid-row: 3 / 4; /* Third row */
+    background-color:rebeccapurple;
+  }
+  p{
+      text-align: left;
+  }
+  
+  .footer {
+    border:1px solid black;
+    border-radius: 3%;
+    grid-column: 1 / 3; /* Spans both columns */
+    grid-row: 4 / 5; /* Fourth row */
+    background-color:slategrey;
+  }
+  

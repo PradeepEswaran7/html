@@ -1,0 +1,15 @@
+<div class="list-row">
+    
+    <div class="col-md-6">
+        <h4>Product List</h4>
+        <ul>
+            <li class="list-group-item"  *ngFor="let p of productslist; let i=index" [routerLink]="['/products',p.id]">{{i+1}}. {{p.pname}}</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <!-- <app-productdetails
+        [viewMode]="true"
+        [sproduct]="selectedproduct"
+        ></app-productdetails> -->
+    </div>
+</div>

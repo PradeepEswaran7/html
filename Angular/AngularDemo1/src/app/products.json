@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "pname": "Pen Reynolds",
+      "pdesc": "Reynolds Company, USA",
+      "price": 50,
+      "inStock": true
+    },
+    {
+      "pname": "Pencil",
+      "pdesc": "Natraj 3B",
+      "price": 10,
+      "inStock": true,
+      "id": 2
+    },
+    {
+      "pname": "Eraser",
+      "pdesc": "Razor Compancy",
+      "price": 100,
+      "inStock": true,
+      "id": 3
+    }
+  ]
+}

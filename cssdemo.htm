@@ -1,0 +1,140 @@
+<html>
+<head>
+    <link rel="stylesheet" href="demo.css"/>
+<style>
+    p{
+        text-align: center;
+        background-color: brown;
+        color: white;
+        border-style:dotted;
+       
+    }
+
+    #content{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        color: red;
+       
+    }
+
+    .fontstyle
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        color: red;
+    }
+
+    body{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+       
+    }
+
+    #header{
+        border: 1px solid blue;
+        text-align: center;
+        width:50%;
+        background-color: blanchedalmond;
+        position: relative;
+        color: green;
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+    }
+    #registration
+    {
+        border: 2px solid red;
+        background-color: chartreuse;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+               
+    }
+
+    a:link{
+        color:red;  
+        text-decoration: none;
+        background-color: white;
+        text-align: center;
+       
+    }
+    a:visited{
+        color:green;
+    }
+    a:hover{
+        color:blue;
+    }
+
+
+ul.a{
+    list-style-type: circle;
+}
+ul.b{
+    /* list-style-type: square; */
+    /* list-style-image: url("bullet.jpg"); */
+    list-style: none;
+    display: inline;
+}
+li.a{
+    float: right;
+    padding:10px;
+}
+ol.a{
+    list-style-type: upper-roman;
+}
+</style>
+
+</head>
+<!-- <body background="seashell.jpeg"> -->
+    <body>
+    <div id="header" class="fontstyle" >
+        CSS Demo Class Registration
+   
+    <div id="registration" class="fontstyle">
+        Name: <input type="text"/>
+        <br/>
+        Email: <input type="email"/>
+        <br/>
+        <br/>
+        <a href="htmlform.htm">Login</a>
+        <!-- <a href="demo.htm">signup</a> -->
+    </div>
+</div>
+
+
+<div>
+    <ul class="a fontstyle">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coke</li>
+    </ul>
+    <ul class="b">
+        <li class="a">Dosa</li>
+        <li class="a">Idli</li>
+        <li class="a">Uttapam</li>
+    </ul>
+    <br/>
+    <ol class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coke</li>
+    </ol>
+</div>
+
+    <!-- <h1 id="content"> Hello CSS DEMO Class  </h1>
+    <span id="content"> This is the selectors with id </span>
+    <div id="content" class="">
+        Iniline selectors used by elements natively
+    </div> -->
+    <!-- <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. We can divide CSS selectors into five categories: Simple selectors (select elements based on name, id, class) Combinator selectors (select elements based on a specific relationship between them)</p>
+    <p style="background-color: blueviolet; color: red;">Inline CSS.
+        Internal or Embedded CSS.
+        External CSS.</p>
+    <p>A simple selector is either a type selector or universal selector followed immediately by zero or more attribute selectors, ID selectors, or pseudo-classes, in any order. The simple selector matches if all of its components match.</p> -->
+</body>
+</html>

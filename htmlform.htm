@@ -1,0 +1,180 @@
+<html>
+<head>
+    <title>HTML FORM dEMO</title>
+   
+</head>
+<body>
+    <center>
+        <h1>HTML FORM CONTROL DEMO</h1>
+    </center>
+    <form name="frmregister"> 
+        <table bgcolor="aqua" border=1 cellspacing="0" align="center" width="30">
+            <tr>
+                <th>
+                    <label for="username">UserName:</label>
+                </th>
+                <td>
+                    <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    maxlength="15"
+                    autofocus
+                    required />
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Password:</label>
+                </th>
+                <td>
+                    <input type="password"
+                    id="userpass"
+                    name="userpass"
+                    placeholder="Enter your password"
+                    autofocus
+                    required />
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Email:</label>
+                </th>
+                <td>
+                    <input type="email"
+                    id="useremail"
+                    name="useremail"
+                    placeholder="Enter your email"
+                    autofocus />
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Mobile:</label>
+                </th>
+                <td>
+                    <input type="number"
+                    id="usermobile"
+                    name="usermobile"
+                    placeholder="Enter your mobile"
+                    autofocus 
+                    min="9000000000"
+                    max="9999999999"
+                    />
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Address:</label>
+                </th>
+                <td>
+                   <textarea name="textassr" id="textaddr" roes="3"
+                   cols="30"></textarea>
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Gender:</label>
+                </th>
+                <td>
+                    <input type="radio"
+                    id="gender" name="gender" checked
+                    />Male
+                    <input type="radio"
+                    id="gender" name="gender" 
+                    />Female
+                    <input type="radio"
+                    id="gender" name="gender" 
+                    />Transgender
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Education:</label>
+                </th>
+                <td>
+                    <input type="checkbox"
+                    id="chkedu" name="chkedu" checked
+                    />Graduate
+                    <input type="checkbox"
+                    id="chkedu" name="chkedu" 
+                    />Post Graduate
+                    <input type="checkbox"
+                    id="chkedu" name="chkedu" 
+                    />Phd
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Country:</label>
+                </th>
+                <td>
+                   <select name="country">
+                       <option selected>India</option>
+                       <option>Japan</option>
+                       <option>china</option>
+                       <option>US</option>
+                       <option>UK</option>
+                       <option>Pakistan</option>
+                   </select>
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Hobbies:</label>
+                </th>
+                <td>
+                   <select mutiple name="hobbies">
+                       <option>Playing Cricket</option>
+                       <option>Playing Batminton</option>
+                       <option>Watching movies</option>
+                       <option>Roaming</option>
+                       <option>Swimming</option>
+                   </select>
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Income Range:</label>
+                </th>
+                <td>
+                    20000<Input type="range" name="income" min="20000" max="10000000"/>10000000
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Profile Photo:</label>
+                </th>
+                <td>
+                    <input type="file" name="profile"/>
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Favorite Song:</label>
+                </th>
+                <td>
+                    <audio controls src="sample.mp3">
+                        Your browser doesn't support audio playing
+                    </audio>
+                </td>
+            </tr> 
+            <tr>
+                <th>
+                    <label>Favouraite Video:</label>
+                </th>
+                <td>
+                    <video controls width="100%" height="100%" autoplay> 
+                    <source src="Video.mp4" type="video/mp4"/>
+                    <source src="Leo.avi" type="video/avi"/>
+                   </video>
+                </td>
+            </tr> 
+            <tr>
+                <td align="right"><button type="submit">Register</td>
+                <td><button type="reset">Clear Form</button></td>
+            </tr> 
+        </table>
+    </form>
+</body>
+</html>

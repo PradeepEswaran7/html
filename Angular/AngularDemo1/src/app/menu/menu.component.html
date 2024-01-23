@@ -1,0 +1,47 @@
+<div clas="container">
+    <div class="row" style="text-align: center; background-color: brown;color: white;">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <input type="radio" name="menu" value="breakfast" 
+            (click)="setMenu('B')" checked
+            /> Breakfast Menu &nbsp;&nbsp;
+            <input type="radio" name="menu" value="lunch"
+            (click)="setMenu('L')" /> Lunch Menu <br/>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <ul class="list-group">
+                <li *ngFor="let mitem of menu" class="list-group-item" (click)="selectMenuItem(mitem)"
+                [ngClass]="applyClasstoMenu"
+                appHighlight
+                textColor="red"
+                bgColor="yellow"
+                > 
+                {{mitem}}
+            </li>
+            </ul>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div [ngSwitch] ="selectedMenuItem" [ngStyle]="priceCSS">
+                <div *ngSwitchCase = "'Idli'">Price : {{pricelistb[0]}}</div>
+                <div *ngSwitchCase = "'Dosa'">Price : {{pricelistb[1]}}</div>
+                <div *ngSwitchCase = "'Poori'">Price : {{pricelistb[2]}}</div>
+                <div *ngSwitchCase = "'Chole'">Price : {{pricelistb[3]}}</div>
+                <div *ngSwitchCase = "'Veg-Meals'">Price : {{pricelistl[0]}}</div>
+                <div *ngSwitchCase = "'Non-Veg Meals'">Price : {{pricelistl[1]}}</div>
+                <div *ngSwitchCase = "'Veg Biryani Combo'">Price : {{pricelistl[2]}}</div>
+                <div *ngSwitchCase = "'Chicken Biryani Combo'">Price : {{pricelistl[3]}}</div>
+                <div *ngSwitchDefault>{{nomenuprice}}</div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>

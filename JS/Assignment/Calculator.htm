@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var flag = true;
+        var input1 = parseInt(prompt("Enter the first number:"));
+        while (flag) {
+            var input = parseInt(prompt("Enter 1 for Addition, 2 for Subtraction, 3 for Multiplication, 4 for Division, or any other number to exit:"));
+            
+            switch (input) {
+                case 1:
+                    var input2 = parseInt(prompt("Enter the second number:"));
+                    var output = input1 + input2;
+                    break;
+                case 2:
+                    var input2 = parseInt(prompt("Enter the second number:"));
+                    var output = input1 - input2;
+                    break;
+                case 3:
+                    var input2 = parseInt(prompt("Enter the second number:"));
+                    var output = input1 * input2;
+                    break;
+                case 4:
+                    var input2 = parseInt(prompt("Enter the second number:"));
+                    if (input2 === 0) {
+                        document.write("Division by zero is not allowed.");
+                    } else {
+                        var output = input1 / input2;
+                    }
+                    break;
+                default:
+                    flag = false;
+                    break;
+            }
+            
+            if (flag) {
+                var doContinue = prompt("Enter 'Y' to continue or any other key to exit:");
+                if (doContinue !== 'Y') {
+                    document.write(output)
+                    flag = false;
+                }else{
+                    input1 = output
+                }
+            }
+        }
+    </script>
+</body>
+</html>

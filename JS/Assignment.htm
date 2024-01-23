@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        // var num = parseInt(prompt("Enter the number to factorial"))
+        // var output =1;
+        // while(num>0){
+        //     output=output*(num)
+        //     --num
+        // }
+        // document.write("Output :  "+output)
+
+        //2
+        var year = parseInt(prompt("Enter the year to check Leap year or Not a Leap year"))
+        var output = ""
+        if(year%400 == 0){
+
+            output = "Leap Year"
+        }else if(year%4 == 0  && year%100 !=0){
+            output = "Leap Year"
+        }else{
+            output = "Not a Leap Year"
+        }
+        document.write("Output :  "+output)
+    </Script> 
+</body>
+</html>

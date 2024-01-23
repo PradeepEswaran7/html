@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var startYear =parseInt(prompt("Enter the start year"))
+        var endYear =parseInt(prompt("Enter the End year"))
+        
+
+        for(var i=startYear;i<=endYear;i++){
+            var output = ""
+            if(i%400 == 0){
+                output = "Leap Year"
+            }else if(i%4 == 0  && i%100 !=0){
+                output = "Leap Year"
+            }else{
+                output = "Not a Leap Year"
+            }
+            if(output == "Leap Year")
+                document.write(i+"<br/>")
+        }
+        
+    </script>
+</body>
+</html>
